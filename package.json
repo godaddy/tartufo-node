@@ -8,7 +8,9 @@
     "tartufo-helper": "./bin/tartufo-helper.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run test:unit",
+    "test:unit": "exit 0",
+    "test:integration": "jest ./tests/integration",
     "lint": "eslint .",
     "clean": "node ./lib/clean-local.js",
     "postinstall": "node ./lib/install-local.js",
@@ -40,6 +42,7 @@
     "eslint-config-godaddy": "^5.0.0",
     "eslint-config-prettier": "^7.0.0",
     "husky": "^5.0.0",
+    "jest": "^27.0.4",
     "lint-staged": "^10.5.3",
     "prettier": "^2.2.1"
   },
