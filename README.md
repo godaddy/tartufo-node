@@ -26,7 +26,7 @@ _Windows is not yet supported with this package. This documentation will be udpa
 
 ## Installing
 
-Run `npm install --save-dev tartufo-node` to install in your local project
+Run `npm install --save-dev @godaddy/tartufo-node` to install in your local project
 
 ## Example usage
 
