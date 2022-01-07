@@ -1,6 +1,6 @@
 {
   "name": "@godaddy/tartufo-node",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Ensures Tartufo is available for npm-based projects",
   "main": "index.js",
   "bin": {
