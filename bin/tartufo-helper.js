@@ -66,6 +66,7 @@ async function commandDoctor() {
     console.log(chalk.white.bgRed("Tartufo not found globally or locally!!"));
     console.log("");
     console.log(chalk`We recommend running {cyan npx tartufo-helper reset} to reinstall tartufo locally`);
+    console.log(chalk`You may also re-run this command with DEBUG=tartufo-node to see verbose logs`);
     process.exit(1);
   }
 
@@ -99,6 +100,7 @@ async function commandDoctor() {
   console.log(
     chalk`{green Your system is ready to use Tartufo!} You can try it out by running {cyan npx tartufo --version}`
   );
+  console.log(chalk`You may also re-run this command with DEBUG=tartufo-node to see verbose logs`);
 }
 
 async function commandReset() {
