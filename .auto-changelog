@@ -1,0 +1,3 @@
+{
+  "ignoreCommitPattern": "\\[(skip|dist)\\]"
+}
