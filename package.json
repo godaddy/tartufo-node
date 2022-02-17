@@ -16,7 +16,7 @@
     "postinstall": "node ./lib/install-local.js",
     "prepare": "husky install",
     "version": "auto-changelog -p --tag-prefix='' && git add CHANGELOG.md",
-    "precommit:tartufo": "node ./bin/tartufo-shim.js --no-json pre-commit"
+    "precommit:tartufo": "node ./bin/tartufo-shim.js pre-commit"
   },
   "repository": {
     "type": "git",
