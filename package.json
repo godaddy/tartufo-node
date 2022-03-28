@@ -18,6 +18,11 @@
     "version": "auto-changelog -p --tag-prefix='' && git add CHANGELOG.md",
     "precommit:tartufo": "node ./bin/tartufo-shim.js pre-commit"
   },
+  "files": [
+    "bin/*",
+    "lib/*",
+    "SECURITY.md"
+  ],
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/godaddy/tartufo-node.git"
