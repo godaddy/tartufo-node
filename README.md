@@ -32,17 +32,21 @@ Run `npm install --save-dev @godaddy/tartufo-node` to install in your local proj
 
 You can use `tartufo` like any other npm-provided bin, for example to use tartufo as a pre-commit you could combine it with [Husky](https://github.com/typicode/husky#readme):
 
+Add the following to your `package.json`:
+
 ```json
 {
   "scripts": {
     "tartufo:pre-commit": "tartufo pre-commit"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run tartufo:pre-commit"
-    }
   }
 }
+```
+
+Then tell Husky to run the command on pre-commit:
+
+```bash
+npx husky add .husky/pre-commit "npm run tartufo:pre-commit"
+git add .husky/pre-commit
 ```
 
 Alternatively you could work with tartufo directly via npx, for example you could run `npx tartufo --help` in your project to see command line tools available to you.
