@@ -1,3 +1,7 @@
 {
-  "ignoreCommitPattern": "\\[(skip|dist)\\]"
+  "ignoreCommitPattern": "\\[(skip|dist)\\]",
+  "commitUrl": "https://github.com/godaddy/tartufo-node/commit/{id}",
+  "issueUrl": "https://github.com/godaddy/tartufo-node/issues/{id}",
+  "mergeUrl": "https://github.com/godaddy/tartufo-node/pull/{id}",
+  "compareUrl": "https://github.com/godaddy/tartufo-node/compare/{from}...{to}"
 }
