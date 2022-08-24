@@ -44,15 +44,15 @@
     "lookpath": "^1.2.2"
   },
   "devDependencies": {
-    "auto-changelog": "^2.4.0",
-    "eslint": "^8.19.0",
-    "eslint-config-godaddy": "^6.1.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-jest": "^26.5.3",
-    "husky": "^8.0.1",
-    "jest": "^28.1.3",
-    "lint-staged": "^13.0.3",
-    "prettier": "^2.7.1"
+    "auto-changelog": "2.4.0",
+    "eslint": "8.19.0",
+    "eslint-config-godaddy": "6.1.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-jest": "26.5.3",
+    "husky": "8.0.1",
+    "jest": "28.1.3",
+    "lint-staged": "13.0.3",
+    "prettier": "2.7.1"
   },
   "lint-staged": {
     "*.{js,css,md}": "prettier --write",
