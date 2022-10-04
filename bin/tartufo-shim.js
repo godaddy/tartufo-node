@@ -34,12 +34,7 @@ async function main() {
   subprocess.on("error", err => {
     console.error(chalk.white.bgRed(`tartufo failed to run: ${err}`));
   });
-  subprocess.on("close", code => {
-    if (Number(code) !== 0) {
-      console.error(chalk.white.bgRed(`tartufo failed to run and exited with a ${code}`));
-    }
-    process.exit();
-  });
+  subprocess.on("close", code => process.exit(code));
 }
 
 if (require.main === module) main();
