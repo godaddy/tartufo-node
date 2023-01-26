@@ -1,14 +1,10 @@
-const path = require("path");
 const { spawn } = require("child_process");
-
-const TARTUFO_SHIM = path.resolve(path.join(__dirname, "../../bin", "tartufo-shim.js"));
-const TARTUFO_HELPER = path.resolve(path.join(__dirname, "../../bin", "tartufo-helper.js"));
 
 async function run(cmd, args) {
   return await new Promise((resolve, reject) => {
     let stdout = "";
     const stderr = "";
-    const subprocess = spawn(cmd, args);
+    const subprocess = spawn(cmd, args, { shell: true, stdio: "pipe" });
     subprocess.stdout.on("data", data => {
       stdout += data.toString();
     });
@@ -29,6 +25,4 @@ async function run(cmd, args) {
 
 module.exports = {
   run,
-  TARTUFO_SHIM,
-  TARTUFO_HELPER,
 };
