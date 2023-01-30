@@ -1,16 +1,14 @@
 # Tartufo, Managed By npm!
 
-[Tartufo](https://tartufo.readthedocs.io/en/stable/) is an open-source project provides tooling to look for and find secrets that may or may not have been accidentally committed to code. It provides a wonderful pre-commit mode that is perfect for keeping repositories clean of committed secrets.
+[Tartufo](https://tartufo.readthedocs.io/en/stable/) is an open-source project that provides tooling to look for and find secrets that may or may not have been accidentally committed to code. It provides a wonderful pre-commit mode that is perfect for keeping repositories clean of committed secrets.
 
-This package exists to help orchestrate making sure Tartufo is available for use by local developers working in pure-javascript projects. When installed into your projects, it will provide a local you can use in your `package.json` scripts.
+**This package** exists to help orchestrate ensuring Tartufo is available for use by local developers working in pure-javascript projects. When installed into your projects, it provides a handy shim that you can use in `package.json` scripts without having to instruct developers to perform extra installation steps!
 
-This package _prefers_ to use a globally-installed tartufo _if present_, otherwise it will install a local copy.
+This package _prefers_ to use a globally-installed Tartufo _if present_, otherwise it will install a local copy.
 
 ## Prerequisites
 
 This package requires that Python 3.6+ be installed and available. It expects to find python either at the command `python3` or `python` if the former is not available.
-
-**This package does not currently support Windows!**
 
 ### Installing Python on a Mac
 
@@ -22,7 +20,10 @@ Please follow your distro's recommendations for installing Python.
 
 ### Installing Python on Windows
 
-_Windows is not yet supported with this package. This documentation will be udpated when it is supported._
+> **Note**
+> We recommend using [WSL](https://learn.microsoft.com/en-us/windows/wsl/install). If you do so, please ignore this section and instead follow any Linux instructions.
+
+Microsoft's ["Get started using Python on Windows for beginners"](https://learn.microsoft.com/en-us/windows/python/beginners#install-python) provides tips on how to install Python.
 
 ## Installing
 
