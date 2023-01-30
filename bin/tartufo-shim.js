@@ -30,7 +30,7 @@ async function main() {
   const [, , ...args] = process.argv;
 
   debug(chalk`{dim.white ${tartufo} ${args.join(" ")}}`);
-  const subprocess = spawn(tartufo, args, { stdio: [process.stdin, process.stdout, process.stderr] });
+  const subprocess = spawn(tartufo, args, { shell: true, stdio: "inherit" });
   subprocess.on("error", err => {
     console.error(chalk.white.bgRed(`tartufo failed to run: ${err}`));
   });
