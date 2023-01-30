@@ -1,4 +1,5 @@
 {
+  "tagPrefix": "",
   "ignoreCommitPattern": "\\[(skip|dist)\\]",
   "commitUrl": "https://github.com/godaddy/tartufo-node/commit/{id}",
   "issueUrl": "https://github.com/godaddy/tartufo-node/issues/{id}",
