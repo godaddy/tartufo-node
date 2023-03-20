@@ -9,7 +9,7 @@
   },
   "scripts": {
     "test": "npm run test:unit",
-    "test:unit": "exit 0",
+    "test:unit": "jest ./tests/unit",
     "test:integration": "jest ./tests/integration",
     "lint": "eslint .",
     "clean": "node ./lib/clean-local.js",
@@ -41,6 +41,7 @@
     "debug": "^4.3.4",
     "global-dirs": "^3.0.1",
     "is-installed-globally": "^0.4.0",
+    "lilconfig": "^2.1.0",
     "lookpath": "^1.2.2"
   },
   "devDependencies": {
@@ -57,5 +58,8 @@
   "lint-staged": {
     "*.{js,css,md}": "prettier --write",
     "*.js": "eslint --fix"
+  },
+  "tartufo-node": {
+    "version": ">= 3.3.1, < 4.0.0"
   }
 }
