@@ -52,6 +52,22 @@ git add .husky/pre-commit
 
 Alternatively you could work with tartufo directly via npx, for example you could run `npx tartufo --help` in your project to see command line tools available to you.
 
+### Specifying a Tartufo version
+
+You may specify a Tartufo version using [Python version specifiers](https://peps.python.org/pep-0440/#version-specifiers). For example, if you want to install and use only Tartufo 3.x you can add the following to your `package.json`:
+
+```json
+{
+  "tartufo-node": {
+    "version": ">= 3.3.1, < 4.0.0"
+  }
+}
+```
+
+The `pip install` command will run _every_ postinstall cycle so you can rest assured that the local version will always remain up to date.
+
+Please note that the _global_ tartufo (the one available on your system) will always take precedence and the version config above will be ignored in those cases.
+
 ## Troubleshooting
 
 This package provides a `tartufo-helper` tool to help diagnose issues locally. To do so, run `npx tartufo-helper doctor` to see debugging output. If necessary, it may recommend you run `npx tartufo-helper reset` to reset your local installation.
