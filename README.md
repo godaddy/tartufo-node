@@ -1,5 +1,7 @@
 # Tartufo, Managed By npm!
 
+> ⚠️ **DEPRECATED**: This package is no longer maintained and has been deprecated. Please use an alternative solution or contact the maintainers for more information.
+
 [Tartufo](https://tartufo.readthedocs.io/en/stable/) is an open-source project that provides tooling to look for and find secrets that may or may not have been accidentally committed to code. It provides a wonderful pre-commit mode that is perfect for keeping repositories clean of committed secrets.
 
 **This package** exists to help orchestrate ensuring Tartufo is available for use by local developers working in pure-javascript projects. When installed into your projects, it provides a handy shim that you can use in `package.json` scripts without having to instruct developers to perform extra installation steps!
